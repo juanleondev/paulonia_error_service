@@ -26,9 +26,9 @@ class PauloniaErrorService {
   ///
   /// Set [sentryDSN] to configure the [SentryHandler()] in release configuration
   static Map<String, CatcherOptions> getCatcherConfig({
-    String sentryDSN,
+    String? sentryDSN,
   }) {
-    final SentryClient _sentry =
+    final SentryClient? _sentry =
         sentryDSN != null ? SentryClient(SentryOptions(dsn: sentryDSN)) : null;
     CatcherOptions debugOptions =
         CatcherOptions(SilentReportMode(), [ConsoleHandler()]);
