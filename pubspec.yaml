@@ -11,9 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sentry: ^4.1.0-nullsafety.1
+  sentry: ^5.0.0
   paulonia_utils: ^0.2.0
-  catcher: ^0.6.3
+  catcher: 
+    git:
+      url: https://github.com/ChrisChV/catcher
 
 
 dev_dependencies:
