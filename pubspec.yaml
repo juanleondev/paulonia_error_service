@@ -1,6 +1,6 @@
 name: paulonia_error_service
 description: Flutter package that wraps the Catcher package. Package with functions for get the configurations for Catcher and a function to send an error.
-version: 0.1.0
+version: 0.2.0
 homepage: https://paulonia.dev
 repository: https://github.com/PauloniaAQP/paulonia_error_service
 
@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sentry: ^4.1.0-nullsafety.1
-  paulonia_utils: ^0.2.0
-  catcher: ^0.6.3
+  sentry: ^5.0.0
+  paulonia_utils: ^0.3.0
+  catcher: ^0.6.6
 
 
 dev_dependencies:
