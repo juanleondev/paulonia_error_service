@@ -1,3 +1,8 @@
+## [0.3.0]
+
+- **Breaking Change:** Now the function `sendError` receives the stacktrace as a required parameter.
+- New function `sendErrorWithoutStacktrace` added
+
 ## [0.2.0]
 
 - Dependencies updated
