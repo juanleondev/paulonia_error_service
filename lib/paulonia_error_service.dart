@@ -6,7 +6,6 @@ import 'package:paulonia_utils/paulonia_utils.dart';
 import 'package:sentry/sentry.dart';
 
 class PauloniaErrorService {
-
   /// Send an error to Catcher
   ///
   /// This function has to be used to handle all errors in the app
