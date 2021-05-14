@@ -6,10 +6,18 @@ import 'package:paulonia_utils/paulonia_utils.dart';
 import 'package:sentry/sentry.dart';
 
 class PauloniaErrorService {
+
   /// Send an error to Catcher
   ///
   /// This function has to be used to handle all errors in the app
-  static void sendError(dynamic error) {
+  static void sendError(dynamic error, dynamic stacktrace) {
+    Catcher.reportCheckedError(error, stacktrace);
+  }
+
+  /// Send an error without stacktrace to Catcher
+  ///
+  /// This function has to be used to handle all errors in the app
+  static void sendErrorWithoutStacktrace(dynamic error) {
     try {
       throw (error);
     } catch (_error, stacktrace) {

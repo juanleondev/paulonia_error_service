@@ -54,7 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
             MaterialButton(
               child: Text('Error!!'),
               onPressed: (){
-                PauloniaErrorService.sendError("This is an error");
+                PauloniaErrorService.sendErrorWithoutStacktrace("This is an error");
+              },
+            ),
+            MaterialButton(
+              child: Text('Error 2!!'),
+              onPressed: (){
+                divide();
               },
             ),
           ],
@@ -62,4 +68,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  double divide(){
+    try{
+      return 10 / null;
+    }
+    catch(error, stacktrace){
+      PauloniaErrorService.sendError(error, stacktrace);
+      return 0;
+    }
+
+  }
+
 }
