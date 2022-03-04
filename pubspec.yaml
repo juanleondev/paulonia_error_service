@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   sentry: ^5.0.0
   paulonia_utils: ^0.3.0
-  catcher: ^0.6.6
+  catcher: 0.6.4
 
 
 dev_dependencies:
